@@ -1,0 +1,8 @@
+const { Router } = require('express');
+const controller = require('./onboarding.controller');
+
+const router = Router();
+
+router.post('/', controller.create);
+
+module.exports = router;
